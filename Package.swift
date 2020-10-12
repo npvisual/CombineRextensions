@@ -8,7 +8,7 @@ let package = Package(
         .library(name: "CombineRextensions", targets: ["CombineRextensions"])
     ],
     dependencies: [
-        .package(name: "SwiftRex", url: "https://github.com/SwiftRex/SwiftRex.git", from: "0.7.1")
+        .package(name: "SwiftRex", url: "https://github.com/npvisual/SwiftRex.git", .branch("master"))
     ],
     targets: [
         .target(name: "CombineRextensions", dependencies: [.product(name: "CombineRex", package: "SwiftRex")])
